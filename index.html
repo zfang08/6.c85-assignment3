@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 3</small>
+			Visualization Critique & Redesign
+		</h1>
+
+		<p>
+			<strong>Zheng Fang</strong> — <em>zhengfan@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>Reading & Critique</h2>
+
+			<figure>
+				<img src="https://vis-society.github.io/assets/imgs/covid-spiral.png" alt="" />
+			</figure>
+
+			<p>
+				Insights about the data/visualization:
+			</p>
+
+			<ul>
+				<li>After reading the article, it is clear that Dr. Shaman aims to convey that Omicron is a highly transmissible COVID variant. He projects that the number of cases in January 2022 could surpass those of any previous month in the pandemic, although the severity may be milder. Given this context, I find the visualization effective in blending the metaphorical idea of "spiraling out of control" with the quantitative representation of case numbers encoded as the width of the timeline. The visualization effectively emphasizes the sharp increase in projected cases by drawing attention to the widening strip at the top end of the spiral, where it expands significantly as it approaches 2022. Additionally, it allows for a direct comparison of each January’s case numbers, prompting reflection on previous surges in January 2021 and 2020. This design helps viewers develop an intuitive sense of the severity of the upcoming wave in January 2022, suggesting that it may be worse than the previous year.</li>
+			</ul>
+
+			<p>
+				Design Critique:
+			</p>
+
+			<ul>
+				<li>However, I would argue that the visualization lacks clarity and persuasiveness in several ways. First, the spiral format is difficult to read, despite its ability to compare month-over-month trends within each year. The design fails to simultaneously convey the continuity of time and the cyclical nature of months. Readers must mentally align time intervals side by side to compare widths, making the visualization less effective. Second, the lack of information on case severity is a major limitation. As stated in the article, Dr. Shaman highlights that while case numbers are expected to rise, the severity of illness may not be as extreme as in previous years. However, this visualization fails to reflect that nuance, potentially misleading viewers about its real-world impact. Factors like school closures, hospitalizations, and workplace disruptions depend not just on the number of cases but also on their severity. By omitting this layer of information, the visualization presents an incomplete and potentially misleading narrative.</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Visualization Sketches</h2>
+
+      <figure>
+				<img src="IMAGE_FILENAME" alt="" />
+				<figcaption>
+          The visualization addresses the problem of clarity by setting the data on common scale, and stacking the three years.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 1:
+			</p>
+
+			<ul>
+				<li>To compare year-round COVID cases, I separated each year into three distinct rows. This approach effectively highlights the month-to-month variation within each year, making it easy to distinguish how case numbers evolved over time.</li>
+				<li>I also added a label for the projected peak in cases, providing a clear reference point for understanding the scale of infections relative to 2020 and 2021.</li>
+				<li>However, one drawback of this approach is that it removes the cyclical nature of the data, treating each year as an isolated entity rather than part of a continuous trend.</li>
+				<li>In the next sketch, I aim to reintroduce the cyclical aspect of the data.</li>
+			</ul>
+
+			<figure>
+				<img src="IMAGE_FILENAME" alt="" />
+				<figcaption>
+          This visualization tries to bring back the circle structure and the continuity of the cases data.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 2:
+			</p>
+
+			<ul>
+				<li>To bring back the cyclical nature of the data, I arranged the visualization into a circular format, where each sector represents a specific month within the year.</li>
+				<li>Along the periphery of the circle, I placed a continuous line with three different hatches, each corresponding to a different year. The idea was that varying opacity of the hatches would help differentiate case numbers across years.</li>
+				<li>However, this approach has some limitations. The overlapping hatches make it difficult to clearly discern individual years, possibly due to rendering limitations or the inherent obscurity of the superimposed design.</li>
+				<li>As in the first sketch, I included labels for the peak case counts in each year to help contextualize the January 2022 surge.</li>
+				<li>For the next iteration, I will eliminate the cyclical format to prioritize clarity.</li>
+			</ul>
+
+			<figure>
+				<img src="IMAGE_FILENAME" alt="" />
+				<figcaption>
+          This visualization removed the circular structure and opt for clarity by using a linear timeline.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 3:
+			</p>
+
+			<ul>
+				<li>In this sketch, I fully abandoned the cyclical structure and instead visualized case numbers along a horizontal axis spanning all three years. This approach improves the ability to track the progression of cases over time in a straightforward manner.</li>
+				<li>Additionally, I introduced a new layer of information: the number of severe cases. This is crucial because severity directly impacts schools, hospitalizations, and workplace disruptions, making it a more comprehensive representation of the pandemic's effects.</li>
+				<li>A key drawback of this design is that the data appears too flat, making it harder to appreciate the differences in monthly case counts across years. A vertical scaling adjustment could help better convey the magnitude of change.</li>
+				<li>Moving forward, I plan to explore additional layers of information, such as geographic distribution, to capture more nuanced effects on different communities.</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Final Visualization Design</h2>
+
+			<figure>
+				<img src="IMAGE_FILENAME" alt="" />
+				<figcaption>
+					The design decisions in this visualization focus on selecting the most relevant variables to tell a compelling story, choosing appropriate chart types, and refining labels and colors to enhance readability.
+				</figcaption>
+			</figure>
+
+		</section>
+
+		<section>
+			<h2>Design Process & Design Decisions</h2>
+
+			<p>
+				First, I addressed the lack of information on case severity, which was a key limitation of previous visualizations. To resolve this, I introduced new deceased cases as an additional data layer, allowing us to gauge the severity of infections beyond just case numbers.
+				For the chart type, I selected a bar chart with the x-axis representing time and the y-axis representing new cases and new deceased cases. However, I quickly realized that these two variables exist on very different scales. If plotted together, the new deceased cases would appear nearly flat, and thus very hard to read. To avoid this issue, I placed them in separate charts, making it easier for readers to see that a higher number of new cases does not necessarily translate to more deaths.
+				Finally, I used color to distinguish each year. This helps readers visually compare how case numbers evolved month by month across different years. This color encoding improves clarity and facilitates year-over-year comparisons.
+
+      </p>
+
+      <h3>Reflection</h3>
+
+      <p>
+        I believe this visualization effectively addresses key critiques of the original example. While I couldn’t preserve the cyclical structure of months in the timeline, the design successfully clarifies the relationship between new cases and new deceased cases, which was one of my primary concerns with the initial visualization.
+
+More importantly, the visualization improves on the issue of week-to-week comparisons by placing case counts on a common scale and anchoring them in a structured layout. This allows for a clearer distinction of spikes and trends over the three-year period, making it easier to analyze fluctuations in case numbers.
+One potential drawback is that even though new cases and new deceased cases are separated into different charts, their juxtaposition could still be misleading. Readers might misinterpret the scale differences, overestimating the number of deaths relative to cases. This is something that could be further refined.
+
+      </p>
+		</section>
+	</main>
+</body>
+</html>
